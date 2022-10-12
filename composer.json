@@ -1,5 +1,5 @@
 {
-    "name": "interludic/challonge-laravel",
+    "name": "zubat/challonge-laravel",
     "description": "Unofficial API to interface with the bracket generator Challonge from Laravel.",
     "minimum-stability": "dev",
     "require": {
@@ -8,8 +8,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "interludic",
-            "email": "info@interludic.com.au"
+            "name": "zubat",
+            "email": "zubat.ru"
         }
     ],
     "autoload": {
