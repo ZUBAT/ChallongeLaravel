@@ -79,7 +79,28 @@ class Challonge
 		// $response = Guzzle::get("tournaments/{$tournament}/include_matches/{$include_matches}/include_participants/{$include_participants}");
 		return new Tournament($response->tournament);
 	}
+	
+	/**
+	 * Create a single command in tournament.
+	 *
+	 * @param  string $tournament
+	 * @param  array $params
+	 * @return Participant
+	 */
+	public function createParticipant($tournament,$params)
+	{
+		$response = Guzzle::post("tournaments/{$tournament}/participants", $params);
+		
+		return new Participant($response->participant);
 
+	}
+
+	public function createBulkParticipants($tournament,$params)
+	{
+		$response = Guzzle::post("tournaments/{$tournament}/participants/bulk_add", $params);
+		
+		return $response;
+	}
 	/**
 	 * Retrieve a tournament's participant list.
 	 *
