@@ -77,6 +77,18 @@ class Challonge
         return new Tournament($response->tournament);
     }
 	/**
+     * Update a single tournament
+     *
+     * @param  string $tournament
+	 * @param  array $params
+     * @return Tournament
+     */
+	public function updateTournament($tournament, $params)
+	{
+		$response = Guzzle::put("tournaments/{$tournament}",$params);
+		return new Tournament($response->tournament);
+	}
+	/**
 	 * Retrieve a single tournament record created with your account.
 	 *
 	 * @param  string $tournament
