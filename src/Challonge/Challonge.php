@@ -65,7 +65,17 @@ class Challonge
 		$response = Guzzle::post("tournaments", $params);
 		return new Tournament($response->tournament);
 	}
-
+ 	/**
+     * Start a single tournament
+     *
+     * @param  string $tournament
+     * @return Tournament
+     */
+    public function startTournament($tournament)
+    {
+        $response = Guzzle::post("tournaments/{$tournament}/start");
+        return new Tournament($response->tournament);
+    }
 	/**
 	 * Retrieve a single tournament record created with your account.
 	 *
