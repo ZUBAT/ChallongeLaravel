@@ -1,6 +1,6 @@
 <?php
 
-namespace Interludic\Challonge;
+namespace ZUBAT\Challonge;
 
 class Model
 {

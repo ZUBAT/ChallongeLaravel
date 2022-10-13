@@ -1,4 +1,4 @@
-<?php namespace Interludic\Challonge\Facades;
+<?php namespace ZUBAT\Challonge\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -14,6 +14,6 @@ class Challonge extends Facade
      *
      * @return string
      */
-		protected static function getFacadeAccessor() { return 'Interludic\Challonge\Challonge'; }
+		protected static function getFacadeAccessor() { return 'ZUBAT\Challonge\Challonge'; }
 
 }

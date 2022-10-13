@@ -1,8 +1,8 @@
 <?php
 
-namespace Interludic\Challonge\Models;
+namespace ZUBAT\Challonge\Models;
 
-use Interludic\Challonge\Model;
+use ZUBAT\Challonge\Model;
 
 class Participant extends Model
 {

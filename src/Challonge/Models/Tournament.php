@@ -1,12 +1,12 @@
 <?php
 
-namespace Interludic\Challonge\Models;
+namespace ZUBAT\Challonge\Models;
 
-use Interludic\Challonge\Model;
-use Interludic\Challonge\Helpers\Guzzle;
-use Interludic\Challonge\Models\Participant;
-use Interludic\Challonge\Exceptions\StillRunningException;
-use Interludic\Challonge\Exceptions\AlreadyStartedException;
+use ZUBAT\Challonge\Model;
+use ZUBAT\Challonge\Helpers\Guzzle;
+use ZUBAT\Challonge\Models\Participant;
+use ZUBAT\Challonge\Exceptions\StillRunningException;
+use ZUBAT\Challonge\Exceptions\AlreadyStartedException;
 
 class Tournament extends Model
 {

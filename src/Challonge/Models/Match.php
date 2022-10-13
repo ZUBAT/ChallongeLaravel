@@ -1,9 +1,9 @@
 <?php
 
-namespace Interludic\Challonge\Models;
+namespace ZUBAT\Challonge\Models;
 
-use Interludic\Challonge\Model;
-use Interludic\Challonge\Helpers\Guzzle;
+use ZUBAT\Challonge\Model;
+use ZUBAT\Challonge\Helpers\Guzzle;
 
 class Match extends Model
 {

@@ -3,7 +3,7 @@ Package for interfacing with the [Challonge] API with Laravel 5.x
 
 ## Installation
 
-`composer require interludic/challonge-laravel`
+`composer require ZUBAT/Challonge-laravel`
 
 add `CHALLONGE_KEY=<your key>` to your .env 
 
@@ -11,18 +11,17 @@ update your config\app.php
 
 
 Providers
-```   	Interludic\Challonge\ChallongeServiceProvider::class,```
+```   	ZUBAT\Challonge\ChallongeServiceProvider::class,```
 
 
 Facade
-```		 'Challonge' => 'Interludic\Challonge\Facades\Challonge'```
+```		 'Challonge' => 'ZUBAT\Challonge\Facades\Challonge'```
 
 
 ## Usage
 
 ```
-
-	try {
+			try {
 				$comp = Challonge::getTournament($challongeId);
 				if((!empty($comp)) && (($comp->state == "complete") || ($comp->state == "underway") || ($comp->state == "group_stages_underway"))){					
 					$standings = Challonge::getStandings($challongeId);
@@ -33,13 +32,12 @@ Facade
 			}
 
 ```
-![Example leaderboard / standings](http://interludic.com.au/assets/img/portfolio/leaderboard.jpg "Example leaderboard / standings")
 
 ## TODO
 * Config Settings
 * Add support for more than 1 group stage
 
+ZUBAT - [zubat.ru](https://zubat.ru)
+Forked from - [interludic.com.au](https://interludic.com.au)
 
-Interludic - [interludic.com.au](https://interludic.com.au)
-Forked from - [team-reflex.com](https://team-reflex.com)
 [Challonge]: <http://api.challonge.com/v1>

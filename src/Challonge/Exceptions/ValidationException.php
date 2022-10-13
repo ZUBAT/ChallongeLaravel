@@ -1,6 +1,6 @@
 <?php
 
-namespace Interludic\Challonge\Exceptions;
+namespace ZUBAT\Challonge\Exceptions;
 
 class ValidationException extends \Exception
 {

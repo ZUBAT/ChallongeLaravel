@@ -1,14 +1,14 @@
 <?php
 
-namespace Interludic\Challonge\Helpers;
+namespace ZUBAT\Challonge\Helpers;
 
 use GuzzleHttp\Client;
-use Interludic\Challonge\Exceptions\ServerException;
-use Interludic\Challonge\Exceptions\NotFoundException;
-use Interludic\Challonge\Exceptions\ValidationException;
-use Interludic\Challonge\Exceptions\UnauthorizedException;
-use Interludic\Challonge\Exceptions\InvalidFormatException;
-use Interludic\Challonge\Exceptions\UnexpectedErrorException;
+use ZUBAT\Challonge\Exceptions\ServerException;
+use ZUBAT\Challonge\Exceptions\NotFoundException;
+use ZUBAT\Challonge\Exceptions\ValidationException;
+use ZUBAT\Challonge\Exceptions\UnauthorizedException;
+use ZUBAT\Challonge\Exceptions\InvalidFormatException;
+use ZUBAT\Challonge\Exceptions\UnexpectedErrorException;
 
 class Guzzle
 {
@@ -55,7 +55,7 @@ class Guzzle
     private static function buildHeaders()
     {
         return [
-            'User-Agent' => 'ChallongePHP/' . CHALLONGE_VERSION . ' ChallongePHP (https://github.com/interludic/ChallongePHP, ' . CHALLONGE_VERSION . ')'
+            'User-Agent' => 'ChallongePHP/' . CHALLONGE_VERSION . ' ChallongePHP (https://github.com/ZUBAT/ChallongePHP, ' . CHALLONGE_VERSION . ')'
         ];
     }
 

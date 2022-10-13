@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Interludic\\Challonge\\": "src/Challonge"
+            "ZUBAT\\Challonge\\": "src/Challonge"
         }
     }
 }

@@ -1,7 +1,6 @@
-<?php namespace Interludic\Challonge;
+<?php namespace ZUBAT\Challonge;
 
-// use PHPChallonge_Settings;
-// use Laravel\Lumen\Application as LumenApplication;
+
 use Illuminate\Support\ServiceProvider;
 use Challonge;
 
@@ -10,9 +9,9 @@ use Challonge;
  * Challonge ServiceProvider
  *
  * @category   Laravel Challonge
- * @package    Interludic/Challonge
- * @copyright  Copyright (c) 2013 - 2017 Interludic (http://www.Interludic.com.au)
- * @author     Interludic <info@Interludic.com.au>
+ * @package    ZUBAT/Challonge
+ * @copyright  Copyright (c) 2022 ZUBAT (https://zubat.ru)
+ * @author     ZUBAT <admin@zubat.ru>
  * @license    http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt    LGPL
  */
 class ChallongeServiceProvider extends ServiceProvider {

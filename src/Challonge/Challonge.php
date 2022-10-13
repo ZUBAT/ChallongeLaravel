@@ -1,11 +1,11 @@
 <?php
 
-namespace Interludic\Challonge;
+namespace ZUBAT\Challonge;
 
-use Interludic\Challonge\Models\Match;
-use Interludic\Challonge\Helpers\Guzzle;
-use Interludic\Challonge\Models\Tournament;
-use Interludic\Challonge\Models\Participant;
+use ZUBAT\Challonge\Models\Match;
+use ZUBAT\Challonge\Helpers\Guzzle;
+use ZUBAT\Challonge\Models\Tournament;
+use ZUBAT\Challonge\Models\Participant;
 
 class Challonge
 {
