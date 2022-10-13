@@ -116,7 +116,13 @@ class Challonge
 		return new Participant($response->participant);
 
 	}
-
+	/**
+	 * Create bulk command in tournament.
+	 *
+	 * @param  string $tournament
+	 * @param  array $params
+	 * @return array
+	 */
 	public function createBulkParticipants($tournament,$params)
 	{
 		$response = Guzzle::post("tournaments/{$tournament}/participants/bulk_add", $params);
